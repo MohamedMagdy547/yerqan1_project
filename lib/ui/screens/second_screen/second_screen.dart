@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
+import 'package:yerqan1_project/app/app_images/app_images.dart';
 import 'package:yerqan1_project/ui/component/button_component/button_component.dart';
 import 'package:yerqan1_project/ui/screens/question_screen/first_question_screen.dart';
 
@@ -36,57 +37,11 @@ class _SecondScreenState extends State<SecondScreen> {
                 SizedBox(
                   height: 50,
                 ),
-                const Row(
+                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      "Y",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.mainColor,
-                      ),
-                    ),
-                    Text(
-                      " E",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.mainColor,
-                      ),
-                    ),
-                    Text(
-                      " R",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.thirdColor,
-                      ),
-                    ),
-                    Text(
-                      " Q",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.thirdColor,
-                      ),
-                    ),
-                    Text(
-                      " A",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.thirdColor,
-                      ),
-                    ),
-                    Text(
-                      " N",
-                      style: TextStyle(
-                        fontSize: 34,
-                        fontWeight: FontWeight.w500,
-                        color: AppColors.thirdColor,
-                      ),
-                    ),
+                    Image.asset(AppImage.login)
+
                   ],
                 ),
                 const SizedBox(

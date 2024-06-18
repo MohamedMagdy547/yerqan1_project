@@ -7,6 +7,8 @@ class AppImage{
   static const String xIcon = "${imagePath}X.png";
   static const String success = "${imagePath}Success.png";
   static const String itm2nan = "${imagePath}itm2nan.png";
+  static const String logo = "${imagePath}logo.png";
+  static const String login = "${imagePath}login.png";
 
 
 

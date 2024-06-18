@@ -38,65 +38,13 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Padding(
+                 Padding(
                   padding:
                       EdgeInsets.only(right: 84, left: 84, top: 50, bottom: 40),
                   child: SizedBox(
                     height: 42,
                     width: double.infinity,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Y",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.mainColor,
-                          ),
-                        ),
-                        Text(
-                          " E",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.mainColor,
-                          ),
-                        ),
-                        Text(
-                          " R",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.thirdColor,
-                          ),
-                        ),
-                        Text(
-                          " Q",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.thirdColor,
-                          ),
-                        ),
-                        Text(
-                          " A",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.thirdColor,
-                          ),
-                        ),
-                        Text(
-                          " N",
-                          style: TextStyle(
-                            fontSize: 34,
-                            fontWeight: FontWeight.w500,
-                            color: AppColors.thirdColor,
-                          ),
-                        ),
-                      ],
-                    ),
+                    child: Image.asset(AppImage.login)
                   ),
                 ),
                 Text(
