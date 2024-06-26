@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
 import 'package:yerqan1_project/ui/component/button_component/button_component.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/first_question_screen.dart';
 
 
 class SecondScreen extends StatefulWidget {
@@ -432,7 +431,7 @@ class _SecondScreenState extends State<SecondScreen> {
                   onTap: () {
                     if (formkey.currentState?.validate() == true) {
                       formkey.currentState?.save();
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>const FirstQuestionScreen() ,));
+                      // Navigator.push(context, MaterialPageRoute(builder: (context) =>const () ,));
                     } else {
                       print("Invalid");
                     }
