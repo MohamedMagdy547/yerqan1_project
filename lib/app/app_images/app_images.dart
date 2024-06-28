@@ -10,6 +10,8 @@ class AppImage{
   static const String logo = "${imagePath}logo.png";
   static const String login = "${imagePath}login.png";
   static const String baby = "${imagePath}baby.png";
+  static const String video = "${imagePath}yt1s.com - - Developing a Rational Approach to Supplementation for Health  Performance  Huberman Lab Podcast_720p.mp4";
+  static const String video2 = "${imagePath}bee.mp4";
 
 
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:yerqan1_project/ui/screens/question_screen/podcast.dart';
 import 'package:yerqan1_project/ui/screens/question_screen/vaccine_info_screen.dart';
 
 import 'ui/screens/question_screen/video_screen.dart';
