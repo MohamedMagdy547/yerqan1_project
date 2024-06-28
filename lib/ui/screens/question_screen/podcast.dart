@@ -80,28 +80,7 @@ class _PodcastScreenState extends State<PodcastScreen> {
                 }).toList(),
               ),
             ),
-            // SizedBox(
-            //   height: 83,
-            // ),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     Navigator.push(context, MaterialPageRoute(builder: (context) => VideoPlayerScreen(),));
-            //   },
-            //   style: ElevatedButton.styleFrom(
-            //     backgroundColor: AppColors.mainColor,
-            //     padding: EdgeInsets.symmetric(horizontal: 122, vertical: 12),
-            //     shape: RoundedRectangleBorder(
-            //       borderRadius: BorderRadius.circular(30.0),
-            //     ),
-            //   ),
-            //   child: Text(
-            //     "Next",
-            //     style: GoogleFonts.roboto(
-            //         fontSize: 20,
-            //         fontWeight: FontWeight.w500,
-            //         color: AppColors.secondColor),
-            //   ),
-            // ),
+
           ],
         ),
       ),

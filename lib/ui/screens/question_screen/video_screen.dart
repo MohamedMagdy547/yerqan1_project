@@ -90,7 +90,7 @@ class _VideoPlayerScreenState extends State<VideoPlayerScreen> {
                   alignment: Alignment.bottomRight,
                   child: ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ArticlesScreen(),));
+                       Navigator.push(context, MaterialPageRoute(builder: (context) => ArticlesScreen(),));
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.white,

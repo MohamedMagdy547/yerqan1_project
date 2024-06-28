@@ -47,7 +47,7 @@ class ArticlesScreen extends StatelessWidget {
 
       ),
       body: ListView.builder(
-        padding: EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(16.0),
         itemCount: articles.length,
         itemBuilder: (context, index) {
           final article = articles[index];
@@ -59,7 +59,7 @@ class ArticlesScreen extends StatelessWidget {
 
                 Text(
                   article['url']!,
-                  style: TextStyle(color: Colors.black),
+                  style: const TextStyle(color: Colors.black),
                 ),
                 InkWell(
                   onTap: () async {
@@ -72,7 +72,7 @@ class ArticlesScreen extends StatelessWidget {
                   },
                   child: Text(
                     article['text']!,
-                    style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
+                    style: const TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
                   ),
                 ),
               ],
@@ -84,7 +84,7 @@ class ArticlesScreen extends StatelessWidget {
         padding: const EdgeInsets.only(right: 38,left: 38, bottom: 38),
         child: ElevatedButton(
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => SpalshScreen(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => const SpalshScreen(),));
           },
           child: Text(
             "Exist",
@@ -95,7 +95,7 @@ class ArticlesScreen extends StatelessWidget {
           ),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
-            padding: EdgeInsets.symmetric(horizontal: 125,vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 125,vertical: 12),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),

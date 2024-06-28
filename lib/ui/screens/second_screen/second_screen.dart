@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
 import 'package:yerqan1_project/ui/component/button_component/button_component.dart';
+import 'package:yerqan1_project/ui/screens/question_screen/vaccine_info_screen.dart';
 
 
 class SecondScreen extends StatefulWidget {
@@ -33,7 +34,7 @@ class _SecondScreenState extends State<SecondScreen> {
             key: formkey,
             child: Column(
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                  Row(
@@ -54,7 +55,7 @@ class _SecondScreenState extends State<SecondScreen> {
                       fontWeight: FontWeight.w600,
                       color: const Color(0XFF797979)),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 48,
                 ),
                 Row(
@@ -70,7 +71,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Container(
@@ -91,7 +92,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               filled: true,
                               fillColor: AppColors.lightGray,
                               contentPadding:
-                                  EdgeInsets.only(left: 40, right: 40),
+                                  const EdgeInsets.only(left: 40, right: 40),
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                   borderSide: const BorderSide(
@@ -126,7 +127,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Container(
@@ -147,7 +148,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               filled: true,
                               fillColor: AppColors.lightGray,
                               contentPadding:
-                                  EdgeInsets.only(left: 40, right: 40),
+                                  const EdgeInsets.only(left: 40, right: 40),
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                   borderSide: const BorderSide(
@@ -174,7 +175,7 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -190,7 +191,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         SizedBox(
@@ -211,7 +212,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               filled: true,
                               fillColor: AppColors.lightGray,
                               contentPadding:
-                                  EdgeInsets.only(left: 40, right: 40),
+                                  const EdgeInsets.only(left: 40, right: 40),
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                   borderSide: const BorderSide(
@@ -246,7 +247,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Container(
@@ -254,14 +255,14 @@ class _SecondScreenState extends State<SecondScreen> {
                             height: 41,
 
                             child: DropdownButtonFormField<String>(
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.keyboard_arrow_down_sharp,
                                 color: AppColors.black,
                               ),
                               decoration: InputDecoration(
                                 filled: true,
                                 fillColor: AppColors.lightGray,
-                                contentPadding: EdgeInsets.only(
+                                contentPadding: const EdgeInsets.only(
                                   left: 16,right: 16
                                 ),
                                 enabledBorder: OutlineInputBorder(
@@ -290,7 +291,7 @@ class _SecondScreenState extends State<SecondScreen> {
                                         value: item,
                                         child: Text(
                                           item,
-                                          style: TextStyle(fontSize: 15),
+                                          style: const TextStyle(fontSize: 15),
                                         ),
                                       ))
                                   .toList(),
@@ -304,7 +305,7 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Row(
@@ -320,7 +321,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Container(
@@ -341,7 +342,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               filled: true,
                               fillColor: AppColors.lightGray,
                               contentPadding:
-                                  EdgeInsets.only(left: 40, right: 40),
+                                  const EdgeInsets.only(left: 40, right: 40),
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                   borderSide: const BorderSide(
@@ -376,7 +377,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               fontWeight: FontWeight.w400,
                               color: AppColors.black),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Container(
@@ -397,7 +398,7 @@ class _SecondScreenState extends State<SecondScreen> {
                               filled: true,
                               fillColor: AppColors.lightGray,
                               contentPadding:
-                                  EdgeInsets.only(left: 40, right: 40),
+                                  const EdgeInsets.only(left: 40, right: 40),
                               enabledBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(8),
                                   borderSide: const BorderSide(
@@ -424,14 +425,14 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 37,
                 ),
                 ButtonComponent(
                   onTap: () {
                     if (formkey.currentState?.validate() == true) {
                       formkey.currentState?.save();
-                      // Navigator.push(context, MaterialPageRoute(builder: (context) =>const () ,));
+                       Navigator.push(context, MaterialPageRoute(builder: (context) =>const VaccineInfoScreen()));
                     } else {
                       print("Invalid");
                     }

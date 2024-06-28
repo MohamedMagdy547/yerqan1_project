@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
 import 'package:yerqan1_project/ui/screens/question_screen/podcast.dart';
+import 'package:yerqan1_project/ui/screens/question_screen/video_screen.dart';
 
 class VaccineInfoScreen extends StatelessWidget {
   const VaccineInfoScreen({super.key});
@@ -19,12 +20,12 @@ class VaccineInfoScreen extends StatelessWidget {
         child: Column(
           children: [
             Image.asset(AppImage.baby,alignment: Alignment.topCenter,),
-            SizedBox(height: 180,),
+            const SizedBox(height: 180,),
         RichText(
           textAlign: TextAlign.start,
           text: TextSpan(
             children: [
-              TextSpan(
+              const TextSpan(
                 text: 'if you want more information about\n vaccines , ',
                 style: TextStyle(
                   color: Colors.black,
@@ -34,7 +35,7 @@ class VaccineInfoScreen extends StatelessWidget {
               ),
               TextSpan(
                 text: 'Click Here ..',
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.blue,
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -66,7 +67,7 @@ class VaccineInfoScreen extends StatelessWidget {
           ),
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.red,
-            padding: EdgeInsets.symmetric(horizontal: 125,vertical: 12),
+            padding: const EdgeInsets.symmetric(horizontal: 125,vertical: 12),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(30.0),
             ),
