@@ -25,6 +25,7 @@ class _SecondScreenState extends State<SecondScreen> {
     return Scaffold(
       backgroundColor: AppColors.backGround,
       appBar: AppBar(
+
         backgroundColor: AppColors.backGround,
         elevation: 0,
       ),
@@ -425,27 +426,30 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 37,
-                ),
-                ButtonComponent(
-                  onTap: () {
-                    if (formkey.currentState?.validate() == true) {
-                      formkey.currentState?.save();
-                       Navigator.push(context, MaterialPageRoute(builder: (context) =>const VaccineInfoScreen()));
-                    } else {
-                      print("Invalid");
-                    }
-                  },
-                  height: 46,
-                  width: 285,
-                  text: "Submit and Continue",
-                ),
+
               ],
             ),
           ),
         ),
       ),
+      bottomNavigationBar:Padding(
+        padding: const EdgeInsets.only(right: 38,left: 38,bottom: 38),
+        child: ButtonComponent(
+          onTap: () {
+            if (formkey.currentState?.validate() == true) {
+              formkey.currentState?.save();
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>const VaccineInfoScreen()));
+            } else {
+              print("Invalid");
+            }
+          },
+          height: 46,
+          width: 285,
+          text: "Submit and Continue",
+        ),
+      ),
+
+
     );
   }
 }

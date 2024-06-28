@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:yerqan1_project/ui/screens/question_screen/podcast.dart';
 import 'package:yerqan1_project/ui/screens/question_screen/vaccine_info_screen.dart';
+import 'package:yerqan1_project/ui/screens/second_screen/second_screen.dart';
 
 import 'ui/screens/question_screen/video_screen.dart';
 import 'ui/screens/splash&intro_screen/splash_screen.dart';
@@ -38,10 +39,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  SpalshScreen(
-
-
-      ),
+      home:  const SpalshScreen(),
     );
   }
 }
