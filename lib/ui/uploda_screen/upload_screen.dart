@@ -2,6 +2,7 @@ import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
+import 'package:yerqan1_project/ui/bad_result/bad_result.dart';
 import 'package:yerqan1_project/ui/good_result/good_result.dart';
 
 class UploadScreen extends StatefulWidget {
@@ -33,8 +34,8 @@ class _UploadScreenState extends State<UploadScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            SizedBox(height: 60),
-            Text("Upload Baby Image",
+            const SizedBox(height: 60),
+            const Text("Upload Baby Image",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600)),
             Padding(
               padding: const EdgeInsets.all(20),
@@ -45,32 +46,32 @@ class _UploadScreenState extends State<UploadScreen> {
                     child: DottedBorder(
                       dashPattern: [8, 4],
                       strokeWidth: 2,
-                      color: Color.fromARGB(255, 101, 237, 244),
+                      color: const Color.fromARGB(255, 101, 237, 244),
                       child: Container(
                         width: double.infinity,
-                        color: Color.fromARGB(255, 223, 240, 245),
+                        color: const Color.fromARGB(255, 223, 240, 245),
                         child: Padding(
                           padding: const EdgeInsets.all(20),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              Icon(Icons.cloud_upload, size: 50),
-                              Text(
+                              const Icon(Icons.cloud_upload, size: 50),
+                              const Text(
                                 'Drag and drop your baby image here',
                                 style:
                                     TextStyle(color: Colors.grey, fontSize: 12),
                               ),
-                              SizedBox(height: 36),
+                              const SizedBox(height: 36),
                               ElevatedButton(
                                 onPressed: _uploadFile,
-                                child: Text(
+                                child: const Text(
                                   'Upload',
                                   style: TextStyle(color: Colors.white),
                                 ),
                                 style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.black,
-                                    fixedSize: Size(200, 30),
-                                    shape: RoundedRectangleBorder(
+                                    fixedSize: const Size(200, 30),
+                                    shape: const RoundedRectangleBorder(
                                         borderRadius: BorderRadius.all(
                                             Radius.circular(5)))
 
@@ -86,22 +87,22 @@ class _UploadScreenState extends State<UploadScreen> {
                 ),
               ),
             ),
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
             if (_isFileUploaded)
               UploadedImagePreview(
                   fileName: _fileName, uploadDate: _uploadDate),
-            Spacer(),
-            DividerWithText(text: 'OR'),
-            Spacer(),
+            const Spacer(),
+            const DividerWithText(text: 'OR'),
+            const Spacer(),
             Container(
               alignment: Alignment.bottomCenter,
-              padding: EdgeInsets.only(bottom: 50),
+              padding: const EdgeInsets.only(bottom: 50),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   IconButton(
                       onPressed: () {},
-                      icon: Icon(
+                      icon: const Icon(
                         Icons.camera_alt,
                         color: Colors.blue,
                       )),
@@ -109,7 +110,7 @@ class _UploadScreenState extends State<UploadScreen> {
                     onPressed: () {
                       // Open camera
                     },
-                    child: Text(
+                    child: const Text(
                       'Open Camera',
                       style: TextStyle(color: Colors.black),
                     ),
@@ -138,14 +139,14 @@ class DividerWithText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        Expanded(
+        const Expanded(
           child: Divider(),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Text(text),
         ),
-        Expanded(
+        const Expanded(
           child: Divider(),
         ),
       ],
@@ -165,28 +166,28 @@ class UploadedImagePreview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Divider(),
-        SizedBox(height: 8),
-        Text(
+        const Divider(),
+        const SizedBox(height: 8),
+        const Text(
           "My Upload",
           style: TextStyle(fontWeight: FontWeight.w400, fontSize: 18),
         ),
         Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               ImageThumbnail(),
-              SizedBox(width: 10),
+              const SizedBox(width: 10),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(fileName,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: Color.fromARGB(255, 9, 9, 9), fontSize: 10)),
                     Text(uploadDate,
-                        style: TextStyle(color: Colors.grey, fontSize: 8)),
+                        style: const TextStyle(color: Colors.grey, fontSize: 8)),
                   ],
                 ),
               ),
@@ -194,34 +195,34 @@ class UploadedImagePreview extends StatelessWidget {
                 children: <Widget>[
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => GoodResult(),));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => const BadResult(),));
 
                     },
-                    child: Text('View'),
+                    child: const Text('View'),
                     style: ElevatedButton.styleFrom(
                         foregroundColor: Colors.white,
                         backgroundColor: Colors.blue, // Text color
                         elevation: 2, // Shadow
-                        fixedSize: Size(80, 5),
-                        shape: RoundedRectangleBorder(
+                        fixedSize: const Size(80, 5),
+                        shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(Radius.circular(5))),
-                        padding: EdgeInsets.all(3)),
+                        padding: const EdgeInsets.all(3)),
                   ),
                   OutlinedButton(
                     onPressed: () {
                       // Delete image
                     },
-                    child: Text(
+                    child: const Text(
                       'Delete',
                       style: TextStyle(fontSize: 12),
                     ),
                     style: OutlinedButton.styleFrom(
                         foregroundColor: Colors.black,
-                        side: BorderSide(color: Colors.black),
-                        fixedSize: Size(80, 5),
-                        shape: RoundedRectangleBorder(
+                        side: const BorderSide(color: Colors.black),
+                        fixedSize: const Size(80, 5),
+                        shape: const RoundedRectangleBorder(
                             borderRadius: BorderRadius.all(Radius.circular(5))),
-                        padding: EdgeInsets.all(3)
+                        padding: const EdgeInsets.all(3)
 // Border color
                         ),
                   ),

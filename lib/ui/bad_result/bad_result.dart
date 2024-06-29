@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:yerqan1_project/ui/bad_result/location_screen.dart';
 
 
 class BadResult extends StatelessWidget {
@@ -7,6 +8,7 @@ class BadResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(),
       backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
@@ -81,11 +83,11 @@ class BadResult extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () {
-                            // Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //         builder: (BuildContext context) =>
-                            //             const LocScreen()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (BuildContext context) =>
+                                        const DoctorsListScreen()));
                           },
                           child: const Text(
                             " find doctor?",

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:yerqan1_project/ui/bad_result/location_screen.dart';
 import 'package:yerqan1_project/ui/good_result/newborn_advices_screen.dart';
+import 'package:yerqan1_project/ui/uploda_screen/upload_screen.dart';
 
 import 'ui/screens/splash&intro_screen/splash_screen.dart';
 
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:   SpalshScreen(),
+      home:    const SpalshScreen(),
     );
   }
 }
