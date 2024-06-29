@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/articles.dart';
+import 'package:yerqan1_project/ui/vacc_screen/articles.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class VideoPlayerScreen extends StatefulWidget {

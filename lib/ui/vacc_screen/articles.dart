@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
+import 'package:yerqan1_project/ui/screens/splash&intro_screen/splash_screen.dart';
 
-import '../splash&intro_screen/splash_screen.dart';
 class ArticlesScreen extends StatelessWidget {
   final List<Map<String, String>> articles = [
     {

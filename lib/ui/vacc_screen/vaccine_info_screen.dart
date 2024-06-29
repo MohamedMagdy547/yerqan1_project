@@ -5,8 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/podcast.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/video_screen.dart';
+import 'package:yerqan1_project/ui/vacc_screen/podcast.dart';
 
 class VaccineInfoScreen extends StatelessWidget {
   const VaccineInfoScreen({super.key});
@@ -43,7 +42,7 @@ class VaccineInfoScreen extends StatelessWidget {
                 ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PodcastScreen(),));
+                   Navigator.push(context, MaterialPageRoute(builder: (context) => PodcastScreen(),));
                   },
               ),
             ],
@@ -56,7 +55,7 @@ class VaccineInfoScreen extends StatelessWidget {
         padding: const EdgeInsets.only(right: 38,left: 38, bottom: 38),
         child: ElevatedButton(
           onPressed: () {
-            // Add exit logic here if needed
+            Navigator.pop(context);
           },
           child: Text(
             "Exist",

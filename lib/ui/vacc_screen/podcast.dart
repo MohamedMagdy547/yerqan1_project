@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/video_screen.dart';
+import 'package:yerqan1_project/ui/vacc_screen/video_screen.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class PodcastScreen extends StatefulWidget {

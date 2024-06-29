@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:yerqan1_project/app/app_colors/app_colors.dart';
 import 'package:yerqan1_project/app/app_images/app_images.dart';
 import 'package:yerqan1_project/ui/component/button_component/button_component.dart';
-import 'package:yerqan1_project/ui/screens/question_screen/vaccine_info_screen.dart';
+import 'package:yerqan1_project/ui/questoin1_screen/qu1.dart';
 
 
 class SecondScreen extends StatefulWidget {
@@ -438,7 +438,7 @@ class _SecondScreenState extends State<SecondScreen> {
           onTap: () {
             if (formkey.currentState?.validate() == true) {
               formkey.currentState?.save();
-              Navigator.push(context, MaterialPageRoute(builder: (context) =>const VaccineInfoScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (context) =>const Quest1()));
             } else {
               print("Invalid");
             }
